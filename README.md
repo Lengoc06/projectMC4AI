@@ -1,8 +1,8 @@
 # Danh sách thành viên
 Họ Tên|Lớp|Email
 -|-|-
-Lê Trần Nguyên Ngọc|MC4AI|ltnngoc06@gmail.com
-Nguyễn Hà Trang|MC4AI|hanguyentrang2110@gmail.com
+Lê Trần Nguyên Ngọc|11CTIN|ltnngoc06@gmail.com
+Nguyễn Hà Trang|11CTIN|hanguyentrang2110@gmail.com
 
 # Thông tin project
 ## Đề tài:
