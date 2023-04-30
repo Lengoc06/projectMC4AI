@@ -2,7 +2,7 @@
 Họ Tên|Lớp|Email
 -|-|-
 Lê Trần Nguyên Ngọc|MC4AI|ltnngoc06@gmail.com
-|MC4AI|
+Nguyễn Hà Trang|MC4AI|hanguyentrang2110@gmail.com
 
 # Thông tin project
 ## Đề tài:
