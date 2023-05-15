@@ -1,8 +1,8 @@
 import streamlit as st
 import cv2
 
-filename = 'haarcascade_frontalface_default.xml'
-face_cascade = cv2.CascadeClassifier(filename)
+#filename = 'haarcascade_frontalface_default.xml'
+#face_cascade = cv2.CascadeClassifier(filename)
 
 def main():
     #Face detection App
@@ -11,7 +11,7 @@ def main():
     choice = st.slidebar.selectbox("Select Activity", activities)
 
     #Detection
-    if choice == "Detection":
+    '''if choice == "Detection":
         st.subheader("Face Detection")
 
         #Use Webcam
@@ -38,7 +38,7 @@ def main():
 
     #About
     elif choice == "About":
-        st.subheader("About this app")
+        st.subheader("About this app")'''
 
 if __name__ == __main__:
     main()
