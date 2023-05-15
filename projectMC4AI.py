@@ -40,4 +40,5 @@ def main():
     elif choice == "About":
         st.subheader("About this app")
 
-main()
+if __name__ == __main__:
+    main()
