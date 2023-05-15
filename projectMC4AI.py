@@ -5,10 +5,6 @@ import cv2
 #face_cascade = cv2.CascadeClassifier(filename)
 
 def main():
-    #Face detection App
-    st.title("Face detection App")
-    activities = ["Detection", "About"]
-    choice = st.slidebar.selectbox("Select Activity", activities)
 
     #Detection
     '''if choice == "Detection":
@@ -39,5 +35,9 @@ def main():
     #About
     elif choice == "About":
         st.subheader("About this app")'''
-    
+
+#Face detection App
+st.title("Face detection App")
+activities = ["Detection", "About"]
+choice = st.slidebar.selectbox("Select Activity", activities)
 main()
