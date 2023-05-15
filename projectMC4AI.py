@@ -39,6 +39,5 @@ def main():
     #About
     elif choice == "About":
         st.subheader("About this app")'''
-
-if __name__ == __main__:
-    main()
+    
+main()
