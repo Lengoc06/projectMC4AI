@@ -2,6 +2,7 @@ from types import GeneratorType
 import streamlit as st
 import cv2
 import numpy as np
+from PIL import Image
 
 filename = 'haarcascade_frontalface_default.xml'
 face_cascade = cv2.CascadeClassifier(filename)
@@ -56,7 +57,7 @@ def main():
         if st.button("Process"):
             if image_file is not None:
                 our_image = Image.open(image_file)
-                st.write("This Is Your Image")
+                st.("This Is Your Image")
                 st.image(our_image)
                 result_img, result_faces = detect_faces(our_image)
                 st.image(result_img)
