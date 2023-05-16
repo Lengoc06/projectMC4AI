@@ -45,7 +45,7 @@ def main():
                 our_image = Image.open(image_file)
                 result_img, result_faces = detect_faces(our_image)
                 st.image(result_img)
-                st.success("Found {} faces".format(len(result_faces)))
+                st.success("Found {} face(s)".format(len(result_faces)))
 
             else: st.write("You haven't upload any image file")
     #About
