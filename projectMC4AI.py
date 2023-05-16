@@ -24,7 +24,7 @@ def main():
     #Face detection App
     st.title("Face detection App")
     activities = ["Detection", "About"]
-    choice = st.slidebar.selectbox("Select Activity", activities)
+    choice = st.sidebar.selectbox("Select Activity", activities)
 
     #Detection
     if choice == "Detection":
