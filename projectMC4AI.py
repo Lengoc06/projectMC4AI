@@ -57,7 +57,7 @@ def main():
         if st.button("Process"):
             if image_file is not None:
                 our_image = Image.open(image_file)
-                st.("This Is Your Image")
+                st.write("This Is Your Image")
                 st.image(our_image)
                 result_img, result_faces = detect_faces(our_image)
                 st.image(result_img)
