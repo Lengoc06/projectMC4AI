@@ -16,9 +16,9 @@ def detect_faces(our_image):
     new_img = np.array(our_image.convert('RBG'))
     img = cv2.cvtColor(new_img, 1)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    faces = clf.detecMultiScale(gray,1.1,4)
+    faces = face_cascade.detecMultiScale(gray,1.1,4)
     for (x, y, width, height) in faces:
-        cv2.rectangle(frame, (x, y), (x + width, y + height), (255, 255, 0), 2)
+        cv2.rectangle(img, (x, y), (x + width, y + height), (255, 255, 0), 2)
     return img, faces
 
 def main():
@@ -57,8 +57,6 @@ def main():
         if st.button("Process"):
             if image_file is not None:
                 our_image = Image.open(image_file)
-                st.write("This Is Your Image")
-                st.image(our_image)
                 result_img, result_faces = detect_faces(our_image)
                 st.image(result_img)
                 st.success("Found {} faces".format(len(result_faces)))
