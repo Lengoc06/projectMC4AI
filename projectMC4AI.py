@@ -52,7 +52,7 @@ def main():
             cv2.imshow("Faces", frame)
         '''
         #Upload img
-        image_file = st.uploader("Upload Image", type = ['jpg', 'png', 'jpeg'])
+        image_file = st.file_uploader("Upload Image", type = ['jpg', 'png', 'jpeg'])
         if st.button("Process"):
             if image_file is not None:
                 our_image = Image.open(image_file)
