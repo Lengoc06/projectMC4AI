@@ -13,6 +13,6 @@ Nguyễn Hà Trang|11CTIN|hanguyentrang2110@gmail.com
 Chức năng|Người thực hiện|Ngày hoàn thành dự kiến
 -|-|-
 Nhận diện khuôn mặt|Lê Trần Nguyên Ngọc|16/05/2023
-Nhận ảnh từ webcam|Nguyễn Hà Trang|15/05/2023
+Chụp ảnh từ webcam|Nguyễn Hà Trang|15/05/2023
 Upload ảnh từ máy|Nguyễn Hà Trang|15/05/2023
-Giao diện|Lê Trần Nguyên Ngọc|16/05/2023
+Giao diện app|Lê Trần Nguyên Ngọc|16/05/2023
