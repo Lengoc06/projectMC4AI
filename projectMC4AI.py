@@ -51,5 +51,7 @@ def main():
     #About
     elif choice == "About":
         st.subheader("About this app")
+        st.write("This app was made by Lê Trần Nguyên Ngọc and Nguyễn Hà Trang")
+        st.write("Special thanks to: JCharisTech, 1littlecoder, NeuralNine and Adarsh Menon")
 
 main()
