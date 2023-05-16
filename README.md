@@ -16,3 +16,5 @@ Nhận diện khuôn mặt|Lê Trần Nguyên Ngọc|16/05/2023
 Chụp ảnh từ webcam|Nguyễn Hà Trang|15/05/2023
 Upload ảnh từ máy|Nguyễn Hà Trang|15/05/2023
 Giao diện app|Lê Trần Nguyên Ngọc|16/05/2023
+
+## Clip Demo: https://youtu.be/PZ6cD9sbnrY
