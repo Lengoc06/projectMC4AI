@@ -13,12 +13,12 @@ def load_image(img):
     return im
 
 def detect_faces(our_image):
-    new_img = np.array(our_image.convert('RBG'))
+    new_img = np.array(our_image.convert('RGB'))
     img = cv2.cvtColor(new_img, 1)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detecMultiScale(gray,1.1,4)
     for (x, y, width, height) in faces:
-        cv2.rectangle(img, (x, y), (x + width, y + height), (255, 255, 0), 2)
+        cv2.rectangle(img, (x, y), (x+width, y+height), (255, 0, 0), 2)
     return img, faces
 
 def main():
@@ -33,25 +33,6 @@ def main():
 
         #Use Webcam
 
-        '''run = st.checkbox('Run')
-        FRAME_WINDOW = st.image([])
-        camera = cv2.VideoCapture(0)
-        while run:
-            _, frame = camera.read()
-            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            FRAME_WINDOW.image(frame)
-            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-            faces = clf.detecMultiScale(
-                gray,
-                scaleFactor = 1.1,
-                minNeighbors = 5,
-                minSize = (30, 30),
-                flags = cv2.CASCADE_SCALE_IMAGE
-            )
-            for (x, y, width, height) in faces:
-                cv2.rectangle(frame, (x, y), (x + width, y + height), (255, 255, 0), 2)
-            cv2.imshow("Faces", frame)
-        '''
         #Upload img
         image_file = st.file_uploader("Upload Image", type = ['jpg', 'png', 'jpeg'])
         if st.button("Process"):
