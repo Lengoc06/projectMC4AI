@@ -16,7 +16,7 @@ def detect_faces(our_image):
     new_img = np.array(our_image.convert('RGB'))
     img = cv2.cvtColor(new_img, 1)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detecMultiScale(gray,1.1,4)
+    faces = face_cascade.detectMultiScale(gray,1.1,4)
     for (x, y, width, height) in faces:
         cv2.rectangle(img, (x, y), (x+width, y+height), (255, 0, 0), 2)
     return img, faces
