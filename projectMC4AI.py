@@ -32,10 +32,11 @@ def main():
         st.subheader("Face Detection")
 
         #Use Webcam
+        if st.button
         image_file = st.camera_input(label = "Take a pic of you")
 
         #Upload img
-        image_file = st.file_uploader("Upload Image", type = ['jpg', 'png', 'jpeg'])
+        if image_file is None: image_file = st.file_uploader("Upload Image", type = ['jpg', 'png', 'jpeg'])
 
         #Face detection
         if st.button("Process"):
